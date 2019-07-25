@@ -18,7 +18,7 @@ const outputFile = 'example-intent.json'
 const intentName = 'Example'
 
 // optional
-const intentId = '8b780063-bf10-49e8-a97d-ed87bffb606d'
+const intentId = ''
 
 const ignoredInvocationString = 'example'
 
@@ -45,7 +45,7 @@ const params = [
 
 const parameterTypes = [
   {
-    id: '4f43a755-2485-4dd6-a2bd-2e0c2a5ec7cb',
+    id: '',
     required: false,
     dataType: '@token',
     name: 'token',
@@ -53,7 +53,7 @@ const parameterTypes = [
     isList: false
   },
   {
-    id: '177a512b-62fe-42bc-9492-4fcc1cf5dbd1',
+    id: '',
     required: false,
     dataType: '@slotType',
     name: 'slotType',
