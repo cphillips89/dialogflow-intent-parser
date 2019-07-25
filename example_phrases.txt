@@ -1,0 +1,2 @@
+example phrase with params token 1 slot
+this token 2 is in a phrase with two param slots

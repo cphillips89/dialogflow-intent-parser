@@ -1,0 +1,98 @@
+{
+  "id": "8b780063-bf10-49e8-a97d-ed87bffb606d",
+  "name": "Example",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        { "name": "Example-followup", "parameters": {}, "lifespan": 2 }
+      ],
+      "parameters": [
+        {
+          "id": "4f43a755-2485-4dd6-a2bd-2e0c2a5ec7cb",
+          "required": false,
+          "dataType": "@token",
+          "name": "token",
+          "value": "$token",
+          "isList": false
+        },
+        {
+          "id": "177a512b-62fe-42bc-9492-4fcc1cf5dbd1",
+          "required": false,
+          "dataType": "@slotType",
+          "name": "slotType",
+          "value": "$slotType",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "It sounds like you would like to know your example, is that correct?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [{ "name": "actions_intent_CONFIRMATION" }],
+  "userSays": [
+    {
+      "data": [
+        { "text": "example", "meta": "@sys.ignore", "userDefined": false },
+        { "text": " ", "userDefined": false },
+        { "text": "phrase with params ", "userDefined": false },
+        {
+          "text": "token 1",
+          "alias": "token",
+          "meta": "@token",
+          "userDefined": false
+        },
+        { "text": " ", "userDefined": false },
+        {
+          "text": "slot",
+          "alias": "slotType",
+          "meta": "@slotType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "data": [
+        { "text": "this ", "userDefined": false },
+        {
+          "text": "token 2",
+          "alias": "token",
+          "meta": "@token",
+          "userDefined": false
+        },
+        { "text": " ", "userDefined": false },
+        { "text": "in a phrase with two param ", "userDefined": false },
+        {
+          "text": "slots",
+          "alias": "slotType",
+          "meta": "@slotType",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}
